@@ -18,75 +18,93 @@ const Menu = props => {
     const pizzaList = [
         {
             name: 'Margarita',
-            priceUSD: 20,
+            priceUSD: 10,
             priceEUR: 17,
             description: 'Tomato sauce, spicy pepperoni, mozzarella',
             img: pizzaImg,
-            id: 1
+            id: 1,
+            countPrice: 10,
+            count: 1
         },
         {
             name: 'Pepperoni',
-            priceUSD: 20,
+            priceUSD: 11,
             priceEUR: 17,
             description: 'Chorizo, chicken, tomatoes, sweet pepper, red onion, garlic, mozzarella, ranch sauce, Burger sauce',
             img: pepperoni,
-            id: 2
+            id: 2,
+            countPrice: 11,
+            count: 1
         },
         {
             name: 'Cheese chicken',
-            priceUSD: 20,
+            priceUSD: 13,
             priceEUR: 17,
             description: 'Cheese sauce, chicken, tomatoes, mozzarella',
             img: chicken,
-            id: 3
+            id: 3,
+            countPrice: 13,
+            count: 1
         },
         {
             name: 'Ham and mushrooms',
-            priceUSD: 20,
+            priceUSD: 14,
             priceEUR: 17,
             description: 'Tomato sauce, mozzarella, ham, mushrooms',
             img: hammushrooms,
-            id: 4
+            id: 4,
+            countPrice: 14,
+            count: 1
         },
         {
             name: 'Spanish chorizo 🌶',
-            priceUSD: 20,
+            priceUSD: 12,
             priceEUR: 17,
             description: 'Fresh tomatoes, spicy chorizo, mozzarella, chipotle sauce',
             img: chorizo,
-            id: 5
+            id: 5,
+            countPrice: 12,
+            count: 1
         },
         {
             name: 'Cheesy 🌱',
-            priceUSD: 20,
+            priceUSD: 18,
             priceEUR: 17,
             description: 'Tomato sauce, mozzarella',
             img: cheesy,
-            id: 6
+            id: 6,
+            countPrice: 18,
+            count: 1
         },
         {
             name: 'Ham and cheese',
-            priceUSD: 20,
+            priceUSD: 9,
             priceEUR: 17,
             description: 'Cream sauce, mozzarella, ham',
             img: hamcheese,
-            id: 7
+            id: 7,
+            countPrice: 9,
+            count: 1
         },
         {
             name: 'Cheeseburger pizza',
-            priceUSD: 20,
+            priceUSD: 17,
             priceEUR: 17,
             description: 'Burger sauce, Bolognese meat sauce, tomatoes, pickles, red onion, mozzarella',
             img: cheesburger,
-            id: 8
+            id: 8,
+            countPrice: 17,
+            count: 1
         },
         {
             name: 'Supermeat 🌶',
-            priceUSD: 20,
+            priceUSD: 14,
             priceEUR: 17,
             description: 'Spicy chorizo, beef meatballs, tomato sauce, chicken, spicy pepperoni, mozzarella, bacon',
             img: supermeat,
-            id: 9
+            id: 9,
+            countPrice: 14,
+            count: 1
         },
     ]
 

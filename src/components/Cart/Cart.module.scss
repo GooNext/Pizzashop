@@ -1,3 +1,158 @@
 .Cart {
-    opacity: 0;
+    position: absolute;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 30px 50px 50px;
+    z-index: 999;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.199);
+    &__title {
+        justify-content: space-between;
+        display: flex;
+        &_order {
+            display: flex;
+            align-items: center;
+            & h4 {
+                margin-right: 40px;
+                margin-bottom: 0;
+                border-bottom: 0.3px solid #ff6900;
+            }
+            & button {
+                border: none;
+                background: #ff6900;
+                padding: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                width: 120px;
+                height: 40px;
+                color: #fff;
+                position: relative;
+            }
+        }
+    }
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        display: flex;
+        align-items: flex-start;   
+        max-width: 450px; 
+        margin: 40px 50px 0 0px;
+        width: 100%;
+        &_price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & button {
+                border: none;
+                background: #ff6900;
+                padding: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                width: 120px;
+                color: #fff;
+                position: relative;
+            }
+        }
+        &_add {
+            display: flex;
+            align-items: center;
+            margin: 0 25px;
+            & p {
+                font-size: 22px!important;
+                font-weight: 500!important;
+                margin: 0 8px;
+                margin-bottom: 2px;
+
+            }
+            & span {
+                width: 30px;
+                height: 35px;
+                border: 1px solid #ff6900;
+                border-radius: 2px;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                background: none;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0 0 20px #ff6900;
+                }
+                &:nth-child(1){
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 40%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 50%;
+                        background: #333;
+                    }
+                }
+                &:nth-child(3){
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 40%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 50%;
+                        background: #333;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 40%;
+                        width: 2px;
+                        left: 50%;
+                        top: 32%;
+                        transform: translate(-50%);
+                        background: #333;
+                    }
+                }
+            }
+        }
+        & img {
+            width: 100px;
+        }
+        &_text {
+            margin-left: 30px;
+            & h3 {
+                font-size: 22px;
+                margin-bottom: 3px;
+            }
+            & p {
+                font-size: 16px;
+                color: rgb(82, 82, 82);
+                font-weight: 300;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__active {
+        position: fixed;
+        top: 50%;
+        display: block;
+        animation: fadeIn 0.5s;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }

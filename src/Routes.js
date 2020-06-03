@@ -6,7 +6,7 @@ import Cart from './components/Cart/Cart'
  const Routes = () => {
      return (
          <Switch>
-             <Route path = '/' component = {App}/>
+             <Route path = '/' component = {App} exact/>
              <Route path = '/cart' component = {Cart} exact/>
          </Switch>
      )

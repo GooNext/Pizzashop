@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './Header.module.scss'
 import logo from '../../dist/img/logo.png'
-import { Link } from 'react-router-dom'
 
 const Header = props => {
 
@@ -20,11 +19,11 @@ const Header = props => {
                     <a href = '/'>+1 234 567-89-00</a>
                 </div>
             </div>
-            <Link to = '/cart' className = {classes.Header__cart} onClick = {toggleCart}>
+            <button className = {classes.Header__cart} onClick = {toggleCart}>
                 <p>Cart</p>
                 <span></span>
                 <p>{cartItem.length}</p>
-            </Link>
+            </button>
 
         </div>
     )
